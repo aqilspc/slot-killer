@@ -10,7 +10,7 @@ db_table_cronjob="ppid_security_cronjob"
 
 # Tentukan direktori yang akan dijelajahi
 directory="/nfs-share/ppid"
-quarantine_directory="/path/to/quarantine"  # Gantilah dengan direktori tempat Anda ingin menyimpan file yang di-karantina
+quarantine_directory="/home/server/security/quarantine"  # Gantilah dengan direktori tempat Anda ingin menyimpan file yang di-karantina
 
 # Koneksi ke MySQL dan ambil kata-kata dari tabel
 keywords=($(mysql -h "$db_host" -u "$db_user" -p"$db_password" -D "$db_name" -se "SELECT keyword FROM $db_table_keywords"))
